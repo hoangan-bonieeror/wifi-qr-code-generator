@@ -1,0 +1,38 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    border-radius: 1rem;
+    position: relative;
+}
+.box > * {
+    text-align: center;
+}
+
+.box .qr-content header {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.rm-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    padding: 5px;
+    background-color: hsl(0, 100%, 70%);
+    cursor: pointer;
+}
+
+.rm-btn:hover {
+    filter: brightness(1.2);
+}
+
+.rm-btn > button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

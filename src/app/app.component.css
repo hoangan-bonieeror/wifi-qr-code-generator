@@ -1,0 +1,102 @@
+.container {
+    margin: 0 80px;
+    margin-bottom: 40px;
+}
+
+.container > header,
+.collections header {
+    display: grid;
+    place-content: center center;
+    grid-template-columns: max-content;
+}
+.container > header > h1,
+.collections header > h1 {
+    overflow-x: hidden;
+    white-space: nowrap;
+    font-size: 40px;
+    letter-spacing: 2px;
+    animation: typing 1s steps(40, end), blink-caret 1s infinite;
+    border-right: 2px solid var(--black);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--black); }
+}
+
+.container_generator {
+    display: grid;
+    grid-template-columns: 59% 40%;
+    column-gap: 1%;
+}
+
+.container_generator > * {
+    padding: 30px;
+    border-radius: 10px;
+    color: var(--black);
+    box-shadow: var(--box-shadow);
+    background-color: white;
+}
+
+.result {
+    align-self: center;
+    justify-self: center;
+}
+
+.form-wifi-qr > form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-wifi-qr > form .prop {
+    display: grid;
+    grid-template-columns: 35% auto;
+    align-items: center;
+    font-weight: 600;
+    min-height: 50px;
+}
+.encode-option {
+    display: flex;
+   gap: 20px;
+}
+.encode-option span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    border-radius: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.btn-submit:hover {
+    filter: brightness(1.1);
+}
+
+.collection-content {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow: hidden;
+    background-color: white;
+    padding: 20px;
+    border-radius: 1rem;
+    gap: 20px;
+}

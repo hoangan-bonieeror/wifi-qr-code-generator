@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --black : #101820FF;
+    --blazing-yellow : #FEE715FF;
+    --box-shadow : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body {
+    background: var(--blazing-yellow);
+    margin: 0;
+}
